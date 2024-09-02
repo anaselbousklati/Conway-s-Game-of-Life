@@ -1,4 +1,4 @@
-Gezien de beperkte tijd van 5 dagen en het feit dat je in een team van 4 werkt, is het belangrijk om het project goed te plannen en de taken effectief te verdelen. Hier is een planning voor een 5-daags project:
+
 
 ### **Dag 1: Project Kickoff en Basisfunctionaliteit**
 
