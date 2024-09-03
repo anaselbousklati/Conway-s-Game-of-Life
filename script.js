@@ -5,6 +5,7 @@ let cells = [];
 let htmlElements = [];
 let intervalId = null;
 let isRunning = false;
+let speed = 100;
 
 function createField() {
   const table = document.getElementById('field');
@@ -18,6 +19,8 @@ function createField() {
 
     for (let x = 0; x < SIZE; x++) {
       const td = document.createElement('td');
+      td.className = 'cell empty';
+      td.addEventListener('click', () => toggleCell(x, y));
       tr.appendChild(td);
       htmlElements[y].push(td);
     }
@@ -44,7 +47,7 @@ function countNeighbors(x, y) {
       }
     }
   }
-  
+
   return count;
 }
 
@@ -70,7 +73,7 @@ function init() {
 
 function populateRandomCells() {
   const cellCount = Math.floor(SIZE * SIZE * 0.3);
-  
+
   for (let i = 0; i < cellCount; i++) {
     let x, y;
     do {
@@ -85,7 +88,7 @@ function populateRandomCells() {
 function startGame() {
   if (!isRunning) {
     isRunning = true;
-    intervalId = setInterval(newGeneration, 100);
+    intervalId = setInterval(newGeneration, speed);
   }
 }
 
@@ -99,8 +102,23 @@ function resetGame() {
   init();
 }
 
+function toggleCell(x, y) {
+  cells[y][x] = cells[y][x] === ALIVE ? EMPTY : ALIVE;
+  draw();
+}
+
+function updateSpeed() {
+  const sliderValue = document.getElementById('speedSlider').value;
+  speed = 1010 - sliderValue;
+  if (isRunning) {
+    pauseGame();
+    startGame();
+  }
+}
+
 document.getElementById('startBtn').addEventListener('click', startGame);
 document.getElementById('pauseBtn').addEventListener('click', pauseGame);
 document.getElementById('resetBtn').addEventListener('click', resetGame);
+document.getElementById('speedSlider').addEventListener('input', updateSpeed);
 
 init();
