@@ -1,31 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="nl">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Conway's Game of Life</title>
+  <title>Conway's Game of Life'</title>
 </head>
-
 <body>
 
   <h1>Conway's Game of Life</h1>
-  <p>Made by: Anas, Ahmad, Selinay & Chaima</p>
 
   <div id="game-container">
     <table id="field"></table>
     <div id="controls">
       <button id="startBtn">Start</button>
-      <button id="pauseBtn">Pause</button>
+      <button id="pauseBtn">Pauze</button>
       <button id="resetBtn">Reset</button>
       <label for="speedSlider">Snelheid:</label>
       <input type="range" id="speedSlider" min="10" max="1000" value="100">
     </div>
+
+    <div id="rules-container">
+      <h3>Pas Regels Aan</h3>
+      <label for="birthRule">Geboorteregel:</label>
+      <input type="text" id="birthRule" value="3">
+      <label for="surviveRule">Overlevingsregel:</label>
+      <input type="text" id="surviveRule" value="2,3">
+    </div>
+
+    <div id="pattern-controls">
+      <button id="savePatternBtn">Patroon Opslaan</button>
+      <button id="loadPatternBtn">Patroon Laden</button>
+      <button id="managePatternsBtn">Beheer Patronen</button>
+    </div>
+    <select id="patternList"></select>
+    
+
+    <canvas id="liveCellsGraph" width="600" height="200"></canvas>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="script.js"></script>
 </body>
-
 </html>
