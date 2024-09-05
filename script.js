@@ -171,8 +171,18 @@ function initializeGraph() {
     },
     options: {
       scales: {
-        x: { title: { display: true, text: 'Generaties' } },
-        y: { title: { display: true, text: 'Levende Cellen' } }
+        x: { 
+          title: { display: true, text: 'Generaties' },
+          ticks: {
+            color: '#000000'
+          }
+        },
+        y: { 
+          title: { display: true, text: 'Levende Cellen' },
+          ticks: {
+            color: '#000000'
+          }
+        }
       }
     }
   });
