@@ -49,4 +49,4 @@ cd Conway-s-Game-of-Life
 - **Anas el Bousklati** - Ontwikkelaar en auteur van het project.
 - **Ahmad Diab** - Ontwikkelaar en auteur van het project.
 - **Selinay Yigit** - Ontwikkelaar en auteur van het project.
-- **Chaima el Moussaoui** - Ontwikkelaar en auteur van het project.
+- **Chaima El Moussaoui** - Ontwikkelaar en auteur van het project.
