@@ -78,7 +78,23 @@ button:disabled {
   justify-content: center;
 }
 
+#buttonControls {
+  display: flex;
+  gap: 10px;
+}
+
+#controlOptions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
 #controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
   margin-top: 10px;
 }
 

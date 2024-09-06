@@ -1,4 +1,4 @@
-const SIZE = 50;
+let SIZE = 50;
 const EMPTY = 0;
 const ALIVE = 1;
 const DEFAULT_SPEED = 100;
@@ -275,6 +275,11 @@ function managePatterns() {
   }
 }
 
+function resetGame() {
+  pauseGame(); 
+  initGame(); 
+}
+
 document.getElementById('startBtn').addEventListener('click', startGame);
 document.getElementById('pauseBtn').addEventListener('click', pauseGame);
 document.getElementById('resetBtn').addEventListener('click', resetGame);
@@ -284,5 +289,10 @@ document.getElementById('surviveRule').addEventListener('input', updateRules);
 document.getElementById('savePatternBtn').addEventListener('click', savePattern);
 document.getElementById('loadPatternBtn').addEventListener('click', loadPattern);
 document.getElementById('managePatternsBtn').addEventListener('click', managePatterns);
+
+document.getElementById('sizeSelect').addEventListener('change', (event) => {
+  SIZE = parseInt(event.target.value, 10);
+  resetGame();
+});
 
 initGame();
