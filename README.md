@@ -50,3 +50,7 @@ cd Conway-s-Game-of-Life
 - **Ahmad Diab** - Ontwikkelaar en auteur van het project.
 - **Selinay Yigit** - Ontwikkelaar en auteur van het project.
 - **Chaima El Moussaoui** - Ontwikkelaar en auteur van het project.
+
+## 📄 Scrumboard
+
+![Scrumboard](https://i.imgur.com/IEf5eWK.png)
