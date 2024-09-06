@@ -1,9 +1,6 @@
-Hier is de volledige README in Markdown-formaat:
-
-```markdown
 # Conway's Game of Life
 
-Dit project is een implementatie van Conway's Game of Life in JavaScript, waarbij elk vakje een unieke, dynamische kleur heeft die verandert met elke generatie. Het project bevat een interactieve simulatie, waarbij gebruikers het spel kunnen starten, pauzeren, patronen opslaan en laden, en de spelregels aanpassen.
+Dit project is een simpele versie van Conway's Game of Life in JavaScript. Elk vakje krijgt een eigen kleur die verandert bij elke generatie. Je kunt zelf spelen met de simulatie: het spel starten, pauzeren, patronen opslaan en laden, en de regels veranderen zoals jij dat wilt. Leuk om mee te experimenteren en te zien hoe patronen zich ontwikkelen!
 
 ## 🛠️ Clone het project
 
@@ -50,3 +47,6 @@ cd Conway-s-Game-of-Life
 ## 📝 Auteurs
 
 - **Anas el Bousklati** - Ontwikkelaar en auteur van het project.
+- **Ahmad Diab** - Ontwikkelaar en auteur van het project.
+- **Selinay Yigit** - Ontwikkelaar en auteur van het project.
+- **Chaima el Moussaoui** - Ontwikkelaar en auteur van het project.
